@@ -1,0 +1,18 @@
+docker (anconda3)
+
+docker pull continuumio/anaconda3
+
+
+
+
+docker run -it -v /home/flychen59/MUNIT-master2:/data --gpus all continuumio/anaconda3
+
+
+conda create -n MUN -y python=3.6
+
+
+conda install pytorch=0.4.1 torchvision cuda92 -c pytorch;
+conda install -y -c anaconda pip;
+conda install -y -c anaconda pyyaml;
+pip install tensorboard tensorboardX;
+
